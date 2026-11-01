@@ -349,6 +349,9 @@ if (location.hash.length > 1) {
   } catch (e) {}
 }
 
+// A second QR link opened while the app is already open only changes the "#..." part
+window.addEventListener('hashchange', () => { if (location.hash.length > 1) handleCode(location.hash); });
+
 // iPhone Safari (not yet on the home screen): show how to keep it offline
 const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 if (isIOS && !navigator.standalone && location.protocol === 'https:') $('installTip').classList.remove('hidden');

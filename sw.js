@@ -1,6 +1,6 @@
 // Keeps the app working offline: everything is saved on the phone at the first visit.
 // Change VERSION whenever the files change so phones pick up the new copy.
-const VERSION = 'capsule-v1';
+const VERSION = 'capsule-v2';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', (e) => {
