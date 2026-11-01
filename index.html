@@ -120,9 +120,6 @@
   .tl-now::after { content: 'you are here'; position: absolute; top: -26px; left: 0; white-space: nowrap; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
   .tl-years { display: flex; justify-content: space-between; margin-top: 10px; font-size: 12px; color: var(--muted); }
   .tl-years b { color: var(--text); font-weight: 500; }
-  .sealed { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 22px; }
-  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--border); font-size: 12px; color: var(--muted); background: rgba(255,255,255,.03); }
-  .chip svg { width: 13px; height: 13px; color: var(--gold); }
 
   /* ---------- opened: the reveal ---------- */
   .curtain { position: fixed; inset: 0; z-index: 20; background: #000; display: flex; align-items: center; justify-content: center; flex-direction: column; animation: curtain 1s 3.4s ease forwards; pointer-events: none; }
@@ -246,10 +243,6 @@
         <div class="tl-years"><span><b>2026</b> · the beginning</span><span>the destination · <b>2035</b></span></div>
       </div>
 
-      <div class="sealed">
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/></svg>A photo from 2026</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>One last line</span>
-      </div>
     </div>
   </section>
 
